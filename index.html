@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip Poudel - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        /* Custom Colors */
+        .primary-bg {
+            background-color: #4a90e2; /* Blue */
+        }
+        .accent-bg {
+            background-color: #f8c291; /* Peach */
+        }
+        .primary-text {
+            color: #4a90e2;
+        }
+        .accent-text {
+            color: #f8c291;
+        }
+        /* Hover Effects */
+        .hover-shadow:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Header Section -->
+    <header class="primary-bg text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-bold">Sudip Poudel</h1>
+            <nav>
+                <a href="#about" class="text-white hover:text-gray-200 mx-3">About Me</a>
+                <a href="#skills" class="text-white hover:text-gray-200 mx-3">Skills</a>
+                <a href="#education" class="text-white hover:text-gray-200 mx-3">Education</a>
+                <a href="#contact" class="text-white hover:text-gray-200 mx-3">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto my-12">
+        <!-- About Me Section -->
+        <section id="about" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg hover-shadow transition-all duration-300">
+                <h2 class="text-3xl font-semibold primary-text mb-4">About Me</h2>
+                <!-- Photo -->
+                <img src="Resume-Photo.jpg" alt="Sudip Poudel" class="rounded-full w-80 h-80 mx-auto mb-6 shadow-lg hover-shadow transition-all duration-300">
+                <p class="text-gray-700">I am an enthusiastic learner with a passion for exploring computer-related subjects. I have a background in science with a focus on physical groups related to computer studies. I am particularly interested in web development and ethical hacking, which I have studied through online courses.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg hover-shadow transition-all duration-300">
+                <h2 class="text-3xl font-semibold primary-text mb-4">Skills</h2>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>Ethical Hacking (Penetration Testing, Security Analysis)</li>
+                    <li>Basic Programming (Python, C++)</li>
+                    <li>Problem Solving & Analytical Thinking</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="mb-16">
+            <div class="bg-white p-8 rounded-lg shadow-lg hover-shadow transition-all duration-300">
+                <h2 class="text-3xl font-semibold primary-text mb-4">Education</h2>
+                <div class="text-gray-700">
+                    <p><strong>Everest Florida Secondary School</strong> - Science Stream (Physical Group)</p>
+                    <p>GPA: 3.52</p>
+                    <p><strong>J.P. High School</strong> - 10th Grade</p>
+                    <p>GPA: 3.30</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="bg-white p-8 rounded-lg shadow-lg hover-shadow transition-all duration-300">
+                <h2 class="text-3xl font-semibold primary-text mb-4">Contact</h2>
+                <p class="text-gray-700">Email: <a href="mailto:sudeeppoudel416@gmail.com" class="accent-text hover:underline">sudeeppoudel416@gmail.com</a></p>
+                <p class="text-gray-700">Phone: <span class="accent-text">977+ 9803681280</span></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="primary-bg text-white py-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Sudip Poudel. All rights reserved.</p>
+            <a href="#top" class="text-white hover:text-gray-200">Back to top</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
